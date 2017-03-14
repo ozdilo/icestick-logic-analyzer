@@ -1,0 +1,287 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed Aug 24 00:00:56 2016
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     la
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk0 [get_nets xtalClock_c]
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 955.262ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         SB_DFFESR  C              \GENERIC_FIFO_1/write_pointer_919__i0  (from xtalClock_c +)
+   Destination:    SB_DFFESR  R              \GENERIC_FIFO_1/write_pointer_919__i0  (to xtalClock_c +)
+
+   Delay:                  44.605ns  (25.5% logic, 74.5% route), 28 logic levels.
+
+ Constraint Details:
+
+     44.605ns data_path \GENERIC_FIFO_1/write_pointer_919__i0 to \GENERIC_FIFO_1/write_pointer_919__i0 meets
+    1000.000ns delay constraint less
+      0.133ns L_S requirement (totaling 999.867ns) by 955.262ns
+
+ Path Details: \GENERIC_FIFO_1/write_pointer_919__i0 to \GENERIC_FIFO_1/write_pointer_919__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367              C to Q              \GENERIC_FIFO_1/write_pointer_919__i0 (from xtalClock_c)
+Route         6   e 1.535                                  \GENERIC_FIFO_1/write_pointer[0]
+LUT4        ---     0.408             I0 to O              \GENERIC_FIFO_1/i1047_1_lut
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n2
+LUT4        ---     0.408             I1 to CO             \GENERIC_FIFO_1/add_676_2
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7938
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_3
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7939
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_4
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7940
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_5
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7941
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_6
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7942
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_7
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7943
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_8
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7944
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_9
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7945
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_10
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7946
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_11
+Route         4   e 1.297                                  \GENERIC_FIFO_1/n1392
+LUT4        ---     0.408             I0 to O              \GENERIC_FIFO_1/i680_1_lut
+Route         2   e 1.158                                  \GENERIC_FIFO_1/level_9__N_900
+LUT4        ---     0.408             I1 to CO             \GENERIC_FIFO_1/add_912_1372_add_1_add_2_2
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7809
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_912_1372_add_1_add_2_3
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7810
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_912_1372_add_1_add_2_4
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7811
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_912_1372_add_1_add_2_5
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7812
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_912_1372_add_1_add_2_6
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7813
+LUT4        ---     0.408             I3 to O              \GENERIC_FIFO_1/add_912_1372_add_1_add_2_7_lut
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n19
+LUT4        ---     0.408             I1 to CO             \GENERIC_FIFO_1/add_6561_7
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7832
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_6561_8
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7833
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_6561_9
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7834
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_6561_10
+Route         1   e 1.020                                  \GENERIC_FIFO_1/n7835
+LUT4        ---     0.408             I3 to O              \GENERIC_FIFO_1/add_6561_11_lut
+Route         2   e 1.158                                  \GENERIC_FIFO_1/level_9__N_876[9]
+LUT4        ---     0.408             I1 to O              \GENERIC_FIFO_1/i7312_4_lut
+Route         1   e 1.020                                  \GENERIC_FIFO_1/n8681
+LUT4        ---     0.408             I3 to O              \GENERIC_FIFO_1/i2_4_lut
+Route        13   e 1.532                                  \GENERIC_FIFO_1/fifo_memory_N_983
+LUT4        ---     0.408             I3 to O              \GENERIC_FIFO_1/i9_4_lut
+Route         1   e 1.020                                  \GENERIC_FIFO_1/n20_adj_1274
+LUT4        ---     0.408             I1 to O              \GENERIC_FIFO_1/i10_4_lut
+Route        10   e 1.480                                  \GENERIC_FIFO_1/n4721
+                  --------
+                   44.605  (25.5% logic, 74.5% route), 28 logic levels.
+
+
+Passed:  The following path meets requirements by 955.262ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         SB_DFFESR  C              \GENERIC_FIFO_1/write_pointer_919__i0  (from xtalClock_c +)
+   Destination:    SB_DFFESR  R              \GENERIC_FIFO_1/write_pointer_919__i0  (to xtalClock_c +)
+
+   Delay:                  44.605ns  (25.5% logic, 74.5% route), 28 logic levels.
+
+ Constraint Details:
+
+     44.605ns data_path \GENERIC_FIFO_1/write_pointer_919__i0 to \GENERIC_FIFO_1/write_pointer_919__i0 meets
+    1000.000ns delay constraint less
+      0.133ns L_S requirement (totaling 999.867ns) by 955.262ns
+
+ Path Details: \GENERIC_FIFO_1/write_pointer_919__i0 to \GENERIC_FIFO_1/write_pointer_919__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367              C to Q              \GENERIC_FIFO_1/write_pointer_919__i0 (from xtalClock_c)
+Route         6   e 1.535                                  \GENERIC_FIFO_1/write_pointer[0]
+LUT4        ---     0.408             I0 to O              \GENERIC_FIFO_1/i1047_1_lut
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n2
+LUT4        ---     0.408             I1 to CO             \GENERIC_FIFO_1/add_676_2
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7938
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_3
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7939
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_4
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7940
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_5
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7941
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_6
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7942
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_7
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7943
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_8
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7944
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_9
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7945
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_10
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7946
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_11
+Route         4   e 1.297                                  \GENERIC_FIFO_1/n1392
+LUT4        ---     0.408             I0 to O              \GENERIC_FIFO_1/i680_1_lut
+Route         2   e 1.158                                  \GENERIC_FIFO_1/level_9__N_900
+LUT4        ---     0.408             I1 to CO             \GENERIC_FIFO_1/add_912_1372_add_1_add_2_2
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7809
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_912_1372_add_1_add_2_3
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7810
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_912_1372_add_1_add_2_4
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7811
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_912_1372_add_1_add_2_5
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7812
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_912_1372_add_1_add_2_6
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7813
+LUT4        ---     0.408             I3 to O              \GENERIC_FIFO_1/add_912_1372_add_1_add_2_7_lut
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n19
+LUT4        ---     0.408             I1 to CO             \GENERIC_FIFO_1/add_6561_7
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7832
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_6561_8
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7833
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_6561_9
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7834
+LUT4        ---     0.408             I3 to O              \GENERIC_FIFO_1/add_6561_10_lut
+Route         2   e 1.158                                  \GENERIC_FIFO_1/level_9__N_876[8]
+LUT4        ---     0.408             I3 to O              \GENERIC_FIFO_1/i7286_4_lut
+Route         1   e 1.020                                  \GENERIC_FIFO_1/n8654
+LUT4        ---     0.408             I2 to O              \GENERIC_FIFO_1/i7312_4_lut
+Route         1   e 1.020                                  \GENERIC_FIFO_1/n8681
+LUT4        ---     0.408             I3 to O              \GENERIC_FIFO_1/i2_4_lut
+Route        13   e 1.532                                  \GENERIC_FIFO_1/fifo_memory_N_983
+LUT4        ---     0.408             I3 to O              \GENERIC_FIFO_1/i9_4_lut
+Route         1   e 1.020                                  \GENERIC_FIFO_1/n20_adj_1274
+LUT4        ---     0.408             I1 to O              \GENERIC_FIFO_1/i10_4_lut
+Route        10   e 1.480                                  \GENERIC_FIFO_1/n4721
+                  --------
+                   44.605  (25.5% logic, 74.5% route), 28 logic levels.
+
+
+Passed:  The following path meets requirements by 955.262ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         SB_DFFESR  C              \GENERIC_FIFO_1/write_pointer_919__i0  (from xtalClock_c +)
+   Destination:    SB_DFFESR  R              \GENERIC_FIFO_1/write_pointer_919__i0  (to xtalClock_c +)
+
+   Delay:                  44.605ns  (25.5% logic, 74.5% route), 28 logic levels.
+
+ Constraint Details:
+
+     44.605ns data_path \GENERIC_FIFO_1/write_pointer_919__i0 to \GENERIC_FIFO_1/write_pointer_919__i0 meets
+    1000.000ns delay constraint less
+      0.133ns L_S requirement (totaling 999.867ns) by 955.262ns
+
+ Path Details: \GENERIC_FIFO_1/write_pointer_919__i0 to \GENERIC_FIFO_1/write_pointer_919__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367              C to Q              \GENERIC_FIFO_1/write_pointer_919__i0 (from xtalClock_c)
+Route         6   e 1.535                                  \GENERIC_FIFO_1/write_pointer[0]
+LUT4        ---     0.408             I0 to O              \GENERIC_FIFO_1/i1047_1_lut
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n2
+LUT4        ---     0.408             I1 to CO             \GENERIC_FIFO_1/add_676_2
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7938
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_3
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7939
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_4
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7940
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_5
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7941
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_6
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7942
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_7
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7943
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_8
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7944
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_9
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7945
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_10
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7946
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_676_11
+Route         4   e 1.297                                  \GENERIC_FIFO_1/n1392
+LUT4        ---     0.408             I0 to O              \GENERIC_FIFO_1/i680_1_lut
+Route         2   e 1.158                                  \GENERIC_FIFO_1/level_9__N_900
+LUT4        ---     0.408             I1 to CO             \GENERIC_FIFO_1/add_912_1372_add_1_add_2_2
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7809
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_912_1372_add_1_add_2_3
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7810
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_912_1372_add_1_add_2_4
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7811
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_912_1372_add_1_add_2_5
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7812
+LUT4        ---     0.408             I3 to O              \GENERIC_FIFO_1/add_912_1372_add_1_add_2_6_lut
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n20
+LUT4        ---     0.408             I1 to CO             \GENERIC_FIFO_1/add_6561_6
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7831
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_6561_7
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7832
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_6561_8
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7833
+LUT4        ---     0.408             CI to CO             \GENERIC_FIFO_1/add_6561_9
+Route         2   e 1.158                                  \GENERIC_FIFO_1/n7834
+LUT4        ---     0.408             I3 to O              \GENERIC_FIFO_1/add_6561_10_lut
+Route         2   e 1.158                                  \GENERIC_FIFO_1/level_9__N_876[8]
+LUT4        ---     0.408             I3 to O              \GENERIC_FIFO_1/i7286_4_lut
+Route         1   e 1.020                                  \GENERIC_FIFO_1/n8654
+LUT4        ---     0.408             I2 to O              \GENERIC_FIFO_1/i7312_4_lut
+Route         1   e 1.020                                  \GENERIC_FIFO_1/n8681
+LUT4        ---     0.408             I3 to O              \GENERIC_FIFO_1/i2_4_lut
+Route        13   e 1.532                                  \GENERIC_FIFO_1/fifo_memory_N_983
+LUT4        ---     0.408             I3 to O              \GENERIC_FIFO_1/i9_4_lut
+Route         1   e 1.020                                  \GENERIC_FIFO_1/n20_adj_1274
+LUT4        ---     0.408             I1 to O              \GENERIC_FIFO_1/i10_4_lut
+Route        10   e 1.480                                  \GENERIC_FIFO_1/n4721
+                  --------
+                   44.605  (25.5% logic, 74.5% route), 28 logic levels.
+
+Report: 44.738 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets xtalClock_c]             |  1000.000 ns|    44.738 ns|    28  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  109936 paths, 1805 nets, and 5069 connections (99.2% coverage)
+
+
+Peak memory: 74690560 bytes, TRCE: 5885952 bytes, DLYMAN: 212992 bytes
+CPU_TIME_REPORT: 0 secs 

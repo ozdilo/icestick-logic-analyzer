@@ -1,0 +1,55 @@
+#-- Lattice, Inc.
+#-- Project file /home/omer/Documents/fpgaprojects/icestick/la/prj/prj_lse.prj
+
+#device
+-a SBTiCE40
+-d iCE40HX1K
+-t TQ144
+#constraint file
+
+#options
+-optimization_goal Area
+-twr_paths 3
+-bram_utilization 100.00
+-ramstyle Auto
+-romstyle Auto
+-use_carry_chain 1
+-carry_chain_length 0
+-resource_sharing 1
+-propagate_constants 1
+-remove_duplicate_regs 1
+-max_fanout 10000
+-fsm_encoding_style Auto
+-use_io_insertion 1
+-use_io_reg auto
+-resolve_mixed_drivers 0
+-RWCheckOnRam 0
+-fix_gated_clocks 1
+-top la
+-loop_limit 1950
+
+-lib work -vhd "../src/controller.vhd" 
+-lib work -vhd "../src/core.vhd" 
+-lib work -vhd "../src/decoder.vhd" 
+-lib work -vhd "../src/demux.vhd" 
+-lib work -vhd "../src/display.vhd" 
+-lib work -vhd "../src/eia232.vhd" 
+-lib work -vhd "../src/filter.vhd" 
+-lib work -vhd "../src/flags.vhd" 
+-lib work -vhd "../src/generic_fifo.vhd" 
+-lib work -vhd "../src/la.vhd" 
+-lib work -vhd "../src/prescaler.vhd" 
+-lib work -vhd "../src/receiver.vhd" 
+-lib work -vhd "../src/sampler.vhd" 
+-lib work -vhd "../src/sram.vhd" 
+-lib work -vhd "../src/stage.vhd" 
+-lib work -vhd "../src/sync.vhd" 
+-lib work -vhd "../src/transmitter.vhd" 
+-lib work -vhd "../src/trigger.vhd" 
+-p "/home/omer/Documents/fpgaprojects/icestick/la/prj"
+
+#set result format/file last
+-output_edif prj_Implmnt/prj.edf
+
+#set log file
+-logfile "prj_Implmnt/prj_lse.log"

@@ -1,0 +1,73 @@
+#-- Synopsys, Inc.
+#-- Project file /home/omer/Documents/fpgaprojects/icestick/la/prj/prj_syn.prj
+#project files
+
+add_file -vhdl -lib work "../src/controller.vhd" 
+add_file -vhdl -lib work "../src/core.vhd" 
+add_file -vhdl -lib work "../src/decoder.vhd" 
+add_file -vhdl -lib work "../src/demux.vhd" 
+add_file -vhdl -lib work "../src/display.vhd" 
+add_file -vhdl -lib work "../src/eia232.vhd" 
+add_file -vhdl -lib work "../src/filter.vhd" 
+add_file -vhdl -lib work "../src/flags.vhd" 
+add_file -vhdl -lib work "../src/generic_fifo.vhd" 
+add_file -vhdl -lib work "../src/la.vhd" 
+add_file -vhdl -lib work "../src/prescaler.vhd" 
+add_file -vhdl -lib work "../src/receiver.vhd" 
+add_file -vhdl -lib work "../src/sampler.vhd" 
+add_file -vhdl -lib work "../src/sram.vhd" 
+add_file -vhdl -lib work "../src/stage.vhd" 
+add_file -vhdl -lib work "../src/sync.vhd" 
+add_file -vhdl -lib work "../src/transmitter.vhd" 
+add_file -vhdl -lib work "../src/trigger.vhd" 
+#implementation: "prj_Implmnt"
+impl -add prj_Implmnt -type fpga
+
+#implementation attributes
+set_option -vlog_std v2001
+set_option -project_relative_includes 1
+
+#device options
+set_option -technology SBTiCE40
+set_option -part iCE40HX1K
+set_option -package TQ144
+set_option -speed_grade 
+set_option -part_companion ""
+
+#compilation/mapping options
+
+# mapper_options
+set_option -frequency auto
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# Silicon Blue iCE40
+set_option -maxfan 10000
+set_option -disable_io_insertion 0
+set_option -pipe 1
+set_option -retiming 0
+set_option -update_models_cp 0
+set_option -fixgatedclocks 2
+set_option -fixgeneratedclocks 0
+
+# NFilter
+set_option -popfeed 0
+set_option -constprop 0
+set_option -createhierarchy 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_format "edif"
+project -result_file ./prj_Implmnt/prj.edf
+project -log_file "./prj_Implmnt/prj.srr"
+impl -active prj_Implmnt
+project -run synthesis -clean

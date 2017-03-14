@@ -1,0 +1,397 @@
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2015 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Aug 24 00:00:54 2016
+
+
+Command Line:  /home/omer/lscc/iCEcube2.2016.02/LSE/bin/lin/synthesis -f prj_lse.prj 
+
+Synthesis options:
+The -a option is SBTiCE40.
+The -t option is TQ144.
+The -d option is iCE40HX1K.
+                                                          
+
+##########################################################
+
+### Lattice Family : SBTiCE40
+
+### Device  : iCE40HX1K
+
+### Package : TQ144
+
+### Number of Logic Cells: 1280
+
+### Number of RAM4k Blocks: 16
+
+### Number of DSP Blocks: 0
+
+### Number of PLLs: 1
+
+### Number of IO Pins: 95
+
+##########################################################
+
+                                                          
+
+Optimization goal = Area
+Top-level module name = la.
+Target frequency = 1.000000 MHz.
+Maximum fanout = 10000.
+Timing path count = 3
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output EDIF file name = prj_Implmnt/prj.edf.
+WARNING - synthesis: Option -force_gsr will be set to false when option -output_edif/-ngo are set
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p /home/omer/Documents/fpgaprojects/icestick/la/prj (searchpath added)
+VHDL library = work
+VHDL design file = ../src/controller.vhd
+VHDL library = work
+VHDL design file = ../src/core.vhd
+VHDL library = work
+VHDL design file = ../src/decoder.vhd
+VHDL library = work
+VHDL design file = ../src/demux.vhd
+VHDL library = work
+VHDL design file = ../src/display.vhd
+VHDL library = work
+VHDL design file = ../src/eia232.vhd
+VHDL library = work
+VHDL design file = ../src/filter.vhd
+VHDL library = work
+VHDL design file = ../src/flags.vhd
+VHDL library = work
+VHDL design file = ../src/generic_fifo.vhd
+VHDL library = work
+VHDL design file = ../src/la.vhd
+VHDL library = work
+VHDL design file = ../src/prescaler.vhd
+VHDL library = work
+VHDL design file = ../src/receiver.vhd
+VHDL library = work
+VHDL design file = ../src/sampler.vhd
+VHDL library = work
+VHDL design file = ../src/sram.vhd
+VHDL library = work
+VHDL design file = ../src/stage.vhd
+VHDL library = work
+VHDL design file = ../src/sync.vhd
+VHDL library = work
+VHDL design file = ../src/transmitter.vhd
+VHDL library = work
+VHDL design file = ../src/trigger.vhd
+-sdc option: SDC file input not used.
+Technology check ok...
+
+Analyzing Verilog file /home/omer/lscc/iCEcube2.2016.02/LSE/userware/unix/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file /home/omer/lscc/iCEcube2.2016.02/LSE/userware/unix/SYNTHESIS_HEADERS/sb_ice40.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "/home/omer/Documents/fpgaprojects/icestick/la/prj". VHDL-1504
+Analyzing VHDL file ../src/controller.vhd. VHDL-1481
+INFO - synthesis: ../src/controller.vhd(39): analyzing entity controller. VHDL-1012
+INFO - synthesis: ../src/controller.vhd(64): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file ../src/core.vhd. VHDL-1481
+INFO - synthesis: ../src/core.vhd(39): analyzing entity core. VHDL-1012
+INFO - synthesis: ../src/core.vhd(59): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file ../src/decoder.vhd. VHDL-1481
+INFO - synthesis: ../src/decoder.vhd(39): analyzing entity decoder. VHDL-1012
+INFO - synthesis: ../src/decoder.vhd(55): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file ../src/demux.vhd. VHDL-1481
+INFO - synthesis: ../src/demux.vhd(35): analyzing entity demux. VHDL-1012
+INFO - synthesis: ../src/demux.vhd(44): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file ../src/display.vhd. VHDL-1481
+INFO - synthesis: ../src/display.vhd(36): analyzing entity display. VHDL-1012
+INFO - synthesis: ../src/display.vhd(43): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file ../src/eia232.vhd. VHDL-1481
+INFO - synthesis: ../src/eia232.vhd(35): analyzing entity eia232. VHDL-1012
+INFO - synthesis: ../src/eia232.vhd(56): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file ../src/filter.vhd. VHDL-1481
+INFO - synthesis: ../src/filter.vhd(36): analyzing entity filter. VHDL-1012
+INFO - synthesis: ../src/filter.vhd(45): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file ../src/flags.vhd. VHDL-1481
+INFO - synthesis: ../src/flags.vhd(34): analyzing entity flags. VHDL-1012
+INFO - synthesis: ../src/flags.vhd(45): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file ../src/generic_fifo.vhd. VHDL-1481
+INFO - synthesis: ../src/generic_fifo.vhd(6): analyzing entity generic_fifo. VHDL-1012
+INFO - synthesis: ../src/generic_fifo.vhd(26): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file ../src/la.vhd. VHDL-1481
+INFO - synthesis: ../src/la.vhd(39): analyzing entity la. VHDL-1012
+INFO - synthesis: ../src/la.vhd(70): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file ../src/prescaler.vhd. VHDL-1481
+INFO - synthesis: ../src/prescaler.vhd(34): analyzing entity prescaler. VHDL-1012
+INFO - synthesis: ../src/prescaler.vhd(46): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file ../src/receiver.vhd. VHDL-1481
+INFO - synthesis: ../src/receiver.vhd(42): analyzing entity receiver. VHDL-1012
+INFO - synthesis: ../src/receiver.vhd(58): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file ../src/sampler.vhd. VHDL-1481
+INFO - synthesis: ../src/sampler.vhd(43): analyzing entity sampler. VHDL-1012
+INFO - synthesis: ../src/sampler.vhd(57): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file ../src/sram.vhd. VHDL-1481
+INFO - synthesis: ../src/sram.vhd(33): analyzing entity sram. VHDL-1012
+INFO - synthesis: ../src/sram.vhd(54): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file ../src/stage.vhd. VHDL-1481
+INFO - synthesis: ../src/stage.vhd(49): analyzing entity stage. VHDL-1012
+INFO - synthesis: ../src/stage.vhd(69): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file ../src/sync.vhd. VHDL-1481
+INFO - synthesis: ../src/sync.vhd(34): analyzing entity sync. VHDL-1012
+INFO - synthesis: ../src/sync.vhd(46): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file ../src/transmitter.vhd. VHDL-1481
+INFO - synthesis: ../src/transmitter.vhd(34): analyzing entity transmitter. VHDL-1012
+INFO - synthesis: ../src/transmitter.vhd(56): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file ../src/trigger.vhd. VHDL-1481
+INFO - synthesis: ../src/trigger.vhd(37): analyzing entity trigger. VHDL-1012
+INFO - synthesis: ../src/trigger.vhd(54): analyzing architecture behavioral. VHDL-1010
+unit la is not yet analyzed. VHDL-1485
+../src/la.vhd(39): executing la(Behavioral)
+
+WARNING - synthesis: ../src/la.vhd(156): using initial value 'U' for reset since it is never assigned. VHDL-1303
+WARNING - synthesis: ../src/la.vhd(167): using initial value '0' for resetswitch since it is never assigned. VHDL-1303
+WARNING - synthesis: ../src/la.vhd(68): replacing existing netlist la(Behavioral). VHDL-1205
+Top module name (VHDL): la
+Loading NGL library '/home/omer/lscc/iCEcube2.2016.02/LSE/xo2c00/data/xo2clib.ngl'...
+Loading NGL library '/home/omer/lscc/iCEcube2.2016.02/LSE/or5g00/data/orc5glib.ngl'...
+Top-level module name = la.
+WARNING - synthesis: Initial value found on net full will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net empty will be ignored due to unrecognized driver type
+WARNING - synthesis: ../src/flags.vhd(57): Register \Inst_core/Inst_flags/external_17 is stuck at Zero. VDB-5013
+WARNING - synthesis: ../src/sampler.vhd(95): Register \Inst_core/Inst_sampler/lastExClock_42 is stuck at Zero. VDB-5013
+INFO - synthesis: Extracted state machine for register '\Inst_core/Inst_controller/state' with one-hot encoding
+State machine has 4 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+ 11 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 0001
+
+ 01 -> 0010
+
+ 10 -> 0100
+
+ 11 -> 1000
+
+INFO - synthesis: Extracted state machine for register '\Inst_core/Inst_trigger/stages[0].Inst_stage/state' with one-hot encoding
+State machine has 3 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 001
+
+ 01 -> 010
+
+ 10 -> 100
+
+INFO - synthesis: Extracted state machine for register '\Inst_core/Inst_trigger/stages[1].Inst_stage/state' with one-hot encoding
+State machine has 3 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 001
+
+ 01 -> 010
+
+ 10 -> 100
+
+INFO - synthesis: Extracted state machine for register '\Inst_core/Inst_trigger/stages[2].Inst_stage/state' with one-hot encoding
+State machine has 3 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 001
+
+ 01 -> 010
+
+ 10 -> 100
+
+INFO - synthesis: Extracted state machine for register '\Inst_core/Inst_trigger/stages[3].Inst_stage/state' with one-hot encoding
+State machine has 3 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 001
+
+ 01 -> 010
+
+ 10 -> 100
+
+
+
+
+WARNING - synthesis: Bit 0 of Register \Inst_core/Inst_trigger/stages[2].Inst_stage/state_FSM is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \Inst_core/Inst_trigger/stages[1].Inst_stage/state_FSM is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \Inst_core/Inst_trigger/stages[0].Inst_stage/state_FSM is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \Inst_core/Inst_trigger/stages[3].Inst_stage/state_FSM is stuck at Zero
+######## Found 1 RTL RAMs in the design.
+######## Mapping RTL RAM \GENERIC_FIFO_1/fifo_memory to 2 EBR blocks in PSEUDO_DUAL_PORT Mode
+
+Combinational loop found : 1
+
+	Net \Inst_core/Inst_trigger/stages[0].Inst_stage/serialChannelL16 
+
+	Instance mux_762_i1 
+
+Combinational loop found : 2
+
+	Net \Inst_core/Inst_trigger/stages[0].Inst_stage/serialChannelH16 
+
+	Instance mux_706_i1 
+
+Combinational loop found : 3
+
+	Net \Inst_core/Inst_trigger/stages[1].Inst_stage/serialChannelL16 
+
+	Instance mux_714_i1 
+
+Combinational loop found : 4
+
+	Net \Inst_core/Inst_trigger/stages[1].Inst_stage/serialChannelH16 
+
+	Instance mux_722_i1 
+
+Combinational loop found : 5
+
+	Net \Inst_core/Inst_trigger/stages[2].Inst_stage/serialChannelL16 
+
+	Instance mux_730_i1 
+
+Combinational loop found : 6
+
+	Net \Inst_core/Inst_trigger/stages[2].Inst_stage/serialChannelH16 
+
+	Instance mux_738_i1 
+
+Combinational loop found : 7
+
+	Net \Inst_core/Inst_trigger/stages[3].Inst_stage/serialChannelL16 
+
+	Instance mux_746_i1 
+
+Combinational loop found : 8
+
+	Net \Inst_core/Inst_trigger/stages[3].Inst_stage/serialChannelH16 
+
+	Instance mux_754_i1 
+
+WARNING - synthesis: ../src/transmitter.vhd(180): Register \Inst_eia232/Inst_transmitter/dataBuffer_i9 is stuck at Zero. VDB-5013
+Duplicate register/latch removal. \Inst_core/Inst_sync/Inst_demux/output[6]_12 is a one-to-one match with \Inst_core/Inst_sync/Inst_filter/input180Delay_i2.
+Duplicate register/latch removal. \Inst_core/Inst_sync/Inst_demux/output[5]_13 is a one-to-one match with \Inst_core/Inst_sync/Inst_filter/input180Delay_i1.
+Duplicate register/latch removal. \Inst_core/Inst_sync/Inst_demux/output[4]_14 is a one-to-one match with \Inst_core/Inst_sync/Inst_filter/input180Delay_i0.
+Duplicate register/latch removal. \Inst_core/Inst_sync/Inst_demux/output[7]_11 is a one-to-one match with \Inst_core/Inst_sync/Inst_filter/input180Delay_i3.
+Applying 1.000000 MHz constraint to all clocks
+
+Writing scf file : prj_Implmnt/prj.scf
+
+Results of NGD DRC are available in la_drc.log.
+
+################### Begin Area Report (la)######################
+Number of register bits => 650 of 1280 (50 % )
+SB_CARRY => 162
+SB_DFF => 347
+SB_DFFE => 124
+SB_DFFESR => 60
+SB_DFFN => 8
+SB_DFFR => 13
+SB_DFFS => 5
+SB_DFFSR => 92
+SB_DFFSS => 1
+SB_GB_IO => 1
+SB_IO => 21
+SB_LUT4 => 995
+SB_RAM1024x4 => 2
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : xtalClock_c, loads : 649
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : Inst_core/Inst_sampler/sampleReady, loads : 57
+  Net : Inst_core/Inst_flags/flagDemux, loads : 41
+  Net : Inst_eia232/Inst_receiver/n1, loads : 38
+  Net : Inst_core/Inst_decoder/wrDivider, loads : 32
+  Net : Inst_core/Inst_decoder/wrsize, loads : 30
+  Net : Inst_eia232/Inst_receiver/n3753, loads : 30
+  Net : Inst_core/Inst_trigger/stages_1..Inst_stage/n1662, loads : 30
+  Net : Inst_core/Inst_sampler/n1639, loads : 29
+  Net : Inst_core/Inst_trigger/stages_3..Inst_stage/n1765, loads : 29
+  Net : Inst_core/Inst_decoder/resetCmd, loads : 28
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets xtalClock_c]             |    1.000 MHz|   22.352 MHz|    28  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 71.230  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 2.768  secs
+--------------------------------------------------------------

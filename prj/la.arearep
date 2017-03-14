@@ -1,0 +1,269 @@
+----------------------------------------------------------------------
+Report for cell la.TECH
+Register bits:  650 of 1280 (50.781%)
+I/O cells:      0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                           SB_CARRY       162          100.0
+                             SB_DFF       347          100.0
+                            SB_DFFE       124          100.0
+                          SB_DFFESR        60          100.0
+                            SB_DFFN         8          100.0
+                            SB_DFFR        13          100.0
+                            SB_DFFS         5          100.0
+                           SB_DFFSR        92          100.0
+                           SB_DFFSS         1          100.0
+                           SB_GB_IO         1          100.0
+                              SB_IO        21          100.0
+                            SB_LUT4       995          100.0
+                       SB_RAM1024x4         2          100.0
+SUB MODULES
+               GENERIC_FIFO(8,1024)         1
+                      controller(8)         1
+                            core(8)         1
+                            decoder         1
+                           demux(8)         1
+       eia232(12000000,4,115200,32)         1
+                          filter(8)         1
+                              flags         1
+                       prescaler(4)         1
+           receiver(3000000,115200)         1
+                         sampler(8)         1
+                           stage(8)         1
+                        stage(8)_U0         1
+                        stage(8)_U1         1
+                        stage(8)_U2         1
+                            sync(8)         1
+     transmitter(3000000,115200,32)         1
+                         trigger(8)         1
+                              TOTAL      1849
+----------------------------------------------------------------------
+Report for cell GENERIC_FIFO(8,1024).v1
+Instance Path : GENERIC_FIFO_1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                           SB_CARRY        55           34.0
+                             SB_DFF        10            2.9
+                          SB_DFFESR        10           16.7
+                            SB_LUT4       108           10.9
+                       SB_RAM1024x4         2          100.0
+                              TOTAL       185
+----------------------------------------------------------------------
+Report for cell eia232(12000000,4,115200,32).v1
+Instance Path : Inst_eia232
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             SB_DFF        56           16.1
+                            SB_DFFE        27           21.8
+                          SB_DFFESR        28           46.7
+                           SB_DFFSR        11           12.0
+                           SB_DFFSS         1          100.0
+                            SB_LUT4       170           17.1
+SUB MODULES
+                       prescaler(4)         1
+           receiver(3000000,115200)         1
+     transmitter(3000000,115200,32)         1
+                              TOTAL       296
+----------------------------------------------------------------------
+Report for cell transmitter(3000000,115200,32).v1
+Instance Path : Inst_eia232.Inst_transmitter
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             SB_DFF        13            3.7
+                            SB_DFFE        22           17.7
+                          SB_DFFESR        20           33.3
+                           SB_DFFSR         2            2.2
+                           SB_DFFSS         1          100.0
+                            SB_LUT4        77            7.7
+                              TOTAL       135
+----------------------------------------------------------------------
+Report for cell receiver(3000000,115200).v1
+Instance Path : Inst_eia232.Inst_receiver
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             SB_DFF        38           11.0
+                            SB_DFFE         5            4.0
+                          SB_DFFESR         8           13.3
+                           SB_DFFSR         4            4.3
+                            SB_LUT4        89            8.9
+                              TOTAL       144
+----------------------------------------------------------------------
+Report for cell prescaler(4).v1
+Instance Path : Inst_eia232.Inst_prescaler
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             SB_DFF         1            0.3
+                           SB_DFFSR         2            2.2
+                            SB_LUT4         3            0.3
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell core(8).v1
+Instance Path : Inst_core
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                           SB_CARRY       100           61.7
+                             SB_DFF       273           78.7
+                            SB_DFFE        97           78.2
+                          SB_DFFESR        22           36.7
+                            SB_DFFN         8          100.0
+                            SB_DFFR        13          100.0
+                            SB_DFFS         5          100.0
+                           SB_DFFSR        81           88.0
+                            SB_LUT4       436           43.8
+SUB MODULES
+                      controller(8)         1
+                            decoder         1
+                           demux(8)         1
+                          filter(8)         1
+                              flags         1
+                         sampler(8)         1
+                           stage(8)         1
+                        stage(8)_U0         1
+                        stage(8)_U1         1
+                        stage(8)_U2         1
+                            sync(8)         1
+                         trigger(8)         1
+                              TOTAL      1047
+----------------------------------------------------------------------
+Report for cell trigger(8).v1
+Instance Path : Inst_core.Inst_trigger
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                           SB_CARRY        60           37.0
+                             SB_DFF       172           49.6
+                            SB_DFFE        96           77.4
+                          SB_DFFESR         4            6.7
+                            SB_DFFR        10           76.9
+                            SB_DFFS         4           80.0
+                           SB_DFFSR        32           34.8
+                            SB_LUT4       274           27.5
+SUB MODULES
+                           stage(8)         1
+                        stage(8)_U0         1
+                        stage(8)_U1         1
+                        stage(8)_U2         1
+                              TOTAL       656
+----------------------------------------------------------------------
+Report for cell stage(8).v1
+Instance Path : Inst_core.Inst_trigger.stages[3].Inst_stage
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                           SB_CARRY        15            9.3
+                             SB_DFF        43           12.4
+                            SB_DFFE        24           19.4
+                          SB_DFFESR         1            1.7
+                            SB_DFFR         2           15.4
+                            SB_DFFS         1           20.0
+                           SB_DFFSR         8            8.7
+                            SB_LUT4        73            7.3
+                              TOTAL       167
+----------------------------------------------------------------------
+Report for cell stage(8)_U0.v1
+Instance Path : Inst_core.Inst_trigger.stages[2].Inst_stage
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                           SB_CARRY        15            9.3
+                             SB_DFF        43           12.4
+                            SB_DFFE        24           19.4
+                          SB_DFFESR         1            1.7
+                            SB_DFFR         2           15.4
+                            SB_DFFS         1           20.0
+                           SB_DFFSR         8            8.7
+                            SB_LUT4        65            6.5
+                              TOTAL       159
+----------------------------------------------------------------------
+Report for cell stage(8)_U1.v1
+Instance Path : Inst_core.Inst_trigger.stages[1].Inst_stage
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                           SB_CARRY        15            9.3
+                             SB_DFF        43           12.4
+                            SB_DFFE        24           19.4
+                          SB_DFFESR         1            1.7
+                            SB_DFFR         2           15.4
+                            SB_DFFS         1           20.0
+                           SB_DFFSR         8            8.7
+                            SB_LUT4        68            6.8
+                              TOTAL       162
+----------------------------------------------------------------------
+Report for cell stage(8)_U2.v1
+Instance Path : Inst_core.Inst_trigger.stages[0].Inst_stage
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                           SB_CARRY        15            9.3
+                             SB_DFF        43           12.4
+                            SB_DFFE        24           19.4
+                          SB_DFFESR         1            1.7
+                            SB_DFFR         2           15.4
+                            SB_DFFS         1           20.0
+                           SB_DFFSR         8            8.7
+                            SB_LUT4        64            6.4
+                              TOTAL       158
+----------------------------------------------------------------------
+Report for cell sync(8).v1
+Instance Path : Inst_core.Inst_sync
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             SB_DFF        32            9.2
+                            SB_DFFN         8          100.0
+                           SB_DFFSR         8            8.7
+                            SB_LUT4        34            3.4
+SUB MODULES
+                           demux(8)         1
+                          filter(8)         1
+                              TOTAL        84
+----------------------------------------------------------------------
+Report for cell filter(8).v1
+Instance Path : Inst_core.Inst_sync.Inst_filter
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             SB_DFF        12            3.5
+                           SB_DFFSR         8            8.7
+                            SB_LUT4        16            1.6
+                              TOTAL        36
+----------------------------------------------------------------------
+Report for cell demux(8).v1
+Instance Path : Inst_core.Inst_sync.Inst_demux
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             SB_DFF         4            1.2
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell sampler(8).v1
+Instance Path : Inst_core.Inst_sampler
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                           SB_CARRY        23           14.2
+                             SB_DFF        33            9.5
+                            SB_DFFE         1            0.8
+                           SB_DFFSR        24           26.1
+                            SB_LUT4        64            6.4
+                              TOTAL       145
+----------------------------------------------------------------------
+Report for cell flags.v1
+Instance Path : Inst_core.Inst_flags
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             SB_DFF         3            0.9
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell decoder.v1
+Instance Path : Inst_core.Inst_decoder
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             SB_DFF         1            0.3
+                           SB_DFFSR        17           18.5
+                            SB_LUT4         7            0.7
+                              TOTAL        25
+----------------------------------------------------------------------
+Report for cell controller(8).v1
+Instance Path : Inst_core.Inst_controller
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                           SB_CARRY        17           10.5
+                             SB_DFF        32            9.2
+                          SB_DFFESR        18           30.0
+                            SB_DFFR         3           23.1
+                            SB_DFFS         1           20.0
+                            SB_LUT4        57            5.7
+                              TOTAL       128

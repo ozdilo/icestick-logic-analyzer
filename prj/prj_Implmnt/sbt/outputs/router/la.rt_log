@@ -1,0 +1,39 @@
+* ******************************************************************************
+
+* iCEcube Router
+
+* Version:            2016.02.27810
+
+* Build Date:         Jan 29 2016 01:49:05
+
+* File Generated:     Aug 24 2016 00:01:43
+
+* Purpose:            Router runtime info
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Executing : /home/omer/lscc/iCEcube2.2016.02/sbt_backend/bin/linux/opt/sbrouter /home/omer/lscc/iCEcube2.2016.02/sbt_backend/devices/ICE40P01.dev /home/omer/Documents/fpgaprojects/icestick/la/prj/prj_Implmnt/sbt/netlist/oadb-la /home/omer/lscc/iCEcube2.2016.02/sbt_backend/devices/ice40HX1K.lib /home/omer/Documents/fpgaprojects/icestick/la/prj/prj_Implmnt/sbt/outputs/packer/la_pk.sdc --outdir /home/omer/Documents/fpgaprojects/icestick/la/prj/prj_Implmnt/sbt/outputs/router --sdf_file /home/omer/Documents/fpgaprojects/icestick/la/prj/prj_Implmnt/sbt/outputs/simulation_netlist/la_sbt.sdf --pin_permutation 
+I1203: Reading Design la
+I1202: Reading Architecture of device iCE40HX1K
+Warning-1035: Removing timing arc from pin "Inst_core.Inst_trigger.stages_1__Inst_stage.mux_714_i1_3_lut_4_lut_LC_6_9_6/in3" to pin "Inst_core.Inst_trigger.stages_1__Inst_stage.mux_714_i1_3_lut_4_lut_LC_6_9_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "Inst_core.Inst_trigger.stages_2__Inst_stage.mux_730_i1_3_lut_4_lut_LC_5_9_3/in3" to pin "Inst_core.Inst_trigger.stages_2__Inst_stage.mux_730_i1_3_lut_4_lut_LC_5_9_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "Inst_core.Inst_trigger.stages_3__Inst_stage.mux_746_i1_3_lut_4_lut_LC_5_8_5/in3" to pin "Inst_core.Inst_trigger.stages_3__Inst_stage.mux_746_i1_3_lut_4_lut_LC_5_8_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "Inst_core.Inst_trigger.stages_0__Inst_stage.mux_762_i1_3_lut_4_lut_LC_4_8_3/in3" to pin "Inst_core.Inst_trigger.stages_0__Inst_stage.mux_762_i1_3_lut_4_lut_LC_4_8_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "Inst_core.Inst_trigger.stages_0__Inst_stage.mux_706_i1_3_lut_4_lut_LC_4_8_5/in3" to pin "Inst_core.Inst_trigger.stages_0__Inst_stage.mux_706_i1_3_lut_4_lut_LC_4_8_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "Inst_core.Inst_trigger.stages_1__Inst_stage.mux_722_i1_3_lut_4_lut_LC_6_9_0/in3" to pin "Inst_core.Inst_trigger.stages_1__Inst_stage.mux_722_i1_3_lut_4_lut_LC_6_9_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "Inst_core.Inst_trigger.stages_2__Inst_stage.mux_738_i1_3_lut_4_lut_LC_5_9_6/in3" to pin "Inst_core.Inst_trigger.stages_2__Inst_stage.mux_738_i1_3_lut_4_lut_LC_5_9_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "Inst_core.Inst_trigger.stages_3__Inst_stage.mux_754_i1_3_lut_4_lut_LC_5_8_2/in3" to pin "Inst_core.Inst_trigger.stages_3__Inst_stage.mux_754_i1_3_lut_4_lut_LC_5_8_2/lcout" to break the combinatorial loop
+I1209: Started routing
+I1223: Total Nets : 1258 
+I1212: Iteration  1 :   220 unrouted : 1 seconds
+I1212: Iteration  2 :    39 unrouted : 1 seconds
+I1212: Iteration  3 :    13 unrouted : 0 seconds
+I1212: Iteration  4 :     0 unrouted : 0 seconds
+I1215: Routing is successful
+I1206: Completed routing
+I1204: Writing Design la
+I1210: Writing routes
+I1218: Exiting the router
+I1224: Router run-time : 6 seconds

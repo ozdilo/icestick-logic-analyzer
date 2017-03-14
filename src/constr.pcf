@@ -1,0 +1,45 @@
+# ##############################################################################
+# iCEcube PCF
+# Version:            
+# Family & Device:    iCE40HX1K
+# Package:            TQ144
+# ##############################################################################
+
+set_io xtalClock 21
+
+set_io tx 8
+set_io rx 9
+
+
+set_io ready50 99  # red
+set_io debugleds[0] 98  # red
+# set_io LED3 97  # red
+# set_io LED4 96  # red
+set_io debugleds[1] 95  # green
+set_io J1_3 112  # PIO0_02
+set_io input[0] 112 # J1_3
+set_io input[1] 113 # J1_4
+set_io input[2] 114 # J1_5
+set_io input[3] 115 # J1_6
+set_io input[4] 116 # J1_7
+set_io input[5] 117 # J1_8
+set_io input[6] 118 # J1_9
+set_io input[7] 119 # J1_10
+
+# set_io input[8] 62  # J3_3
+# set_io input[9] 61  # J3_4
+# set_io input[10] 60 # J3_5
+# set_io input[11] 56 # J3_6
+# set_io input[12] 48 # J3_7
+# set_io input[13] 47 # J3_8
+# set_io input[14] 45 # J3_9
+# set_io input[15] 44 # J3_10
+
+set_io testcnt[0] 62 # J3_3
+set_io testcnt[1] 61 # J3_4
+set_io testcnt[2] 60 # J3_5
+set_io testcnt[3] 56 # J3_6
+set_io testcnt[4] 48 # J3_7
+set_io testcnt[5] 47 # J3_8
+set_io testcnt[6] 45 # J3_9
+set_io testcnt[7] 44 # J3_10
