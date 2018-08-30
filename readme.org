@@ -1,0 +1,25 @@
+* Introduction
+This work ports the Sump logic analyzer to the icestick evaluation board. Firmware has been modified for supporting the lattice ice40 FPGA. As seen on the Device Utilization Summary, ICE40HX1K only allows an implementation of 8-port logic analyzer. 
+
+Device Utilization Summary
+
+ | LogicCells    | 1042/1280 |
+ | PLBs          | 158/160   |
+ | BRAMs         | 2/16      |
+ | IOs and GBIOs | 22/96     |
+ | PLLs          | 0/1       |
+
+* Modifications to the Firmware
+- Instead of an SRAM interface, I have used an internal FIFO which uses the BRAMs on the  FPGA. 
+- The data was 32 bit length inside all of the FPGA firmware. I have changed the whole firmware in order to support different number of probes. 
+- Only at the end of the sump firmware, I have kept the data width as 32 in order to keep the uart communication with the host same.
+
+* Requirements
+- Sump pc client
+- rxtx 2.2pre2 binaries
+- PgsLookAndFeel
+
+* Usage
+Run the original sump pc client without any modifications. https://www.sump.org/projects/analyzer/client/
+[[
+sump.png]]
