@@ -21,5 +21,6 @@ Device Utilization Summary
 
 * Usage
 Run the original sump pc client without any modifications. https://www.sump.org/projects/analyzer/client/
-[[
-sump.png]]
+
+
+[[sump.png]]
